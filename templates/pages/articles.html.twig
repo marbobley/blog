@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <section id="about">
+contenu specific au template articles
+<div>
+    {{ dump(sulu_navigation_root_tree('articles',2)) }}
+
+    {% 
+        set uid = sulu_navigation_root_tree('articles')[0]["id"]
+    %}
+    {%
+        set navTree = sulu_navigation_tree(uid)
+    %}
+
+    {{ dump(navTree) }}
+     {% for item in navTree %}
+                                <li > {{ item.title }}
+                                </li>
+                            {% endfor %}
+</div>
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">                
+                <h1>{{ content.title }}</h1>
+                {{ content.article|raw }}
+            </div>
+        </div>
+    </section>
+{% endblock %}
