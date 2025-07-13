@@ -1,26 +1,23 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <section id="about">
-contenu specific au template articles
-<div>
-
-    {% 
-        set uid = sulu_navigation_root_tree('articles')[0]["id"]
-    %}
-    {%
-        set navTree = sulu_navigation_tree(uid)
-    %}
-     {% for item in navTree|sulu_util_multisort('[created]', 'desc') %}
-                                <li > {{ item.title }}
-                                </li>
-                            {% endfor %}
-</div>
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">                
-                <h1>{{ content.title }}</h1>
-                {{ content.article|raw }}
-            </div>
-        </div>
-    </section>
+	<section id="about">
+		contenu specific au template articles
+		<div>
+        {# permet de lister les urls des articles pour afficher un raccourcie#}
+			{% set uid = sulu_navigation_root_tree('articles')[0]["id"] %}
+			{% set navTree = sulu_navigation_tree(uid) %}
+			{% for item in navTree|sulu_util_multisort('[created]', 'desc') %}
+				<li>
+					<a href="{{ sulu_content_path(item.url, item.webspaceKey) }}">{{ item.title }}</a>
+				</li>
+			{% endfor %}
+		</div>
+		<div class="container px-4">
+			<div class="row gx-4 justify-content-center">
+				<h1>{{ content.title }}</h1>
+				{{ content.article|raw }}
+			</div>
+		</div>
+	</section>
 {% endblock %}
