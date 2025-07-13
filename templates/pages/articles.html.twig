@@ -4,7 +4,6 @@
     <section id="about">
 contenu specific au template articles
 <div>
-    {{ dump(sulu_navigation_root_tree('articles')) }}
 
     {% 
         set uid = sulu_navigation_root_tree('articles')[0]["id"]
@@ -12,8 +11,6 @@ contenu specific au template articles
     {%
         set navTree = sulu_navigation_tree(uid)
     %}
-
-    {{ dump(navTree) }}
      {% for item in navTree|sulu_util_multisort('[created]', 'desc') %}
                                 <li > {{ item.title }}
                                 </li>
