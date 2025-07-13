@@ -19,8 +19,11 @@
 <body>
     <header>
         {% block header %}
-            <nav>
-                <ul>
+            <nav class="nav">
+            <div class="nav-header">
+                header
+            </div>
+                <ul class="nav-link">
                     <li>
                         <a href="{{ sulu_content_root_path() }}">Homepage</a>
                     </li>
