@@ -5,7 +5,7 @@
     {% set navTree = sulu_navigation_tree(uid) %}
     {% for item in navTree|sulu_util_multisort('[created]', 'desc') %}
         <li>
-            <a href="{{ sulu_content_path(item.url, item.webspaceKey) }}">{{ item.title }} -- </a>
+            <a href="{{ sulu_content_path(item.url, item.webspaceKey) }}">{{ item.title }} -- {{ item.created | date("m/d/Y") }}</a>
         </li>
     {% endfor %}
 </div>

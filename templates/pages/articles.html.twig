@@ -2,7 +2,7 @@
 
 {% block content %}
 	<section>
-		{{ component('ArticleList', {navigationContext: 'articles'}) }}
+		{{ component('NavigationContextList', {navigationContext: 'articles'}) }}
 		<div class="container px-4">
 			<div class="row gx-4 justify-content-center">
 				<h1>{{ content.title }}</h1>
@@ -10,4 +10,5 @@
 			</div>
 		</div>
 	</section>
+	
 {% endblock %}
