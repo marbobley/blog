@@ -1,0 +1,11 @@
+{# twig component : src/Twig/Components/ArticleList.php #}
+<div>     
+    <h1>Menu de navigation pour : {{ navigationContext}}</h1>
+    {% set uid = sulu_navigation_root_tree(navigationContext)[0]["id"] %}
+    {% set navTree = sulu_navigation_tree(uid) %}
+    {% for item in navTree|sulu_util_multisort('[created]', 'desc') %}
+        <li>
+            <a href="{{ sulu_content_path(item.url, item.webspaceKey) }}">{{ item.title }} -- </a>
+        </li>
+    {% endfor %}
+</div>
