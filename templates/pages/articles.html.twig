@@ -1,15 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-	<section>
-		{{ component('NavigationContextList', {navigationContext: 'articles'}) }}
-		<div class="container px-4">
-			<div class="row gx-4 justify-content-center">
-				<h1>{{ content.title }}</h1>
-				<h2>{{ content.subtitle }}</h2>
-				{{ content.article|raw }}
-			</div>
-		</div>
-	</section>
-	
+	{{ component('NavigationContextList', {navigationContext: 'articles'}) }}
+	<section class="section-articles">
+		<article class="article">
+			<h1>{{ content.title }}</h1>
+			<h2>{{ content.subtitle }}</h2>
+			{{ content.article|raw }}
+		</article>
+	</section>	
 {% endblock %}
