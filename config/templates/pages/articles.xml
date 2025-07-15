@@ -26,6 +26,13 @@
 
             <tag name="sulu.rlp.part"/>
         </property>
+        <property name="subtitle" type="text_line" mandatory="true">
+            <meta>
+                <title lang="en">SubTitle</title>
+                <title lang="de">SubTitle</title>
+            </meta>
+            <tag name="sulu.rlp.part"/>
+        </property>
 
         <property name="url" type="resource_locator" mandatory="true">
             <meta>
