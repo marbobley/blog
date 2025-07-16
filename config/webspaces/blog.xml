@@ -37,6 +37,12 @@
                     <title lang="de">Hauptnavigation</title>
                 </meta>
             </context>
+            <context key="articles">
+                <meta>
+                    <title lang="en">Article Navigation</title>
+                    <title lang="de">Article Navigation</title>
+                </meta>
+            </context>
         </contexts>
     </navigation>
 
