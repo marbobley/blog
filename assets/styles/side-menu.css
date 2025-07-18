@@ -1,0 +1,41 @@
+.navbar-navigation-context
+{
+  position:fixed;
+  left: 0px;
+  top: 60px;
+  height: 100%;
+  border-right: 2px solid black;
+  z-index: 10;
+  width: 200px;
+}
+.navbar-navigation-context-list
+{
+}
+.navbar-navigation-context-link
+{
+}
+
+.section-search{
+  position: fixed;
+  left: 20px;
+  top:60px;
+  height: 100%;
+  width: 80%;
+
+}
+
+.section-articles
+{
+  position: fixed;
+  left: 200px;
+  top:60px;
+  height: 100%;
+  width: 80%;
+}
+
+.article{
+  padding-top: 30px;
+  padding-right:30px;
+  padding-left:30px;
+
+}
