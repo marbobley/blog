@@ -8,9 +8,12 @@
                 <p class="lead">Et apprendre à utiliser Sulu!</p>
             </div>
         </header>
-
-    <h1>{{ content.title }}</h1>
-
-    {{ content.article|raw }}
-    blablaAAA
+<section>
+    <div class="container px-4 text-center">
+        <h1>{{ content.title }}</h1>
+        {{ content.article|raw }}
+        <h2>Articles : </h2>
+	    {{ component('NavigationContextList', {navigationContext: 'articles'}) }}
+    </div>
+</section>
 {% endblock %}
