@@ -5857,16 +5857,16 @@
         },
         {
             "name": "sulu/sulu",
-            "version": "2.6.9",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu/sulu.git",
-                "reference": "a108d2c24082820ab1476cd2c133ca95635e12ec"
+                "reference": "c96b8f772abf31aab127c377f1ba7cb85901c645"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu/sulu/zipball/a108d2c24082820ab1476cd2c133ca95635e12ec",
-                "reference": "a108d2c24082820ab1476cd2c133ca95635e12ec",
+                "url": "https://api.github.com/repos/sulu/sulu/zipball/c96b8f772abf31aab127c377f1ba7cb85901c645",
+                "reference": "c96b8f772abf31aab127c377f1ba7cb85901c645",
                 "shasum": ""
             },
             "require": {
@@ -6004,7 +6004,7 @@
                 "league/flysystem": "^1.0",
                 "league/flysystem-aws-s3-v3": "^1.0.1",
                 "league/flysystem-azure-blob-storage": "^0.1 || ^1.0",
-                "matthiasnoback/symfony-config-test": "^4.3 || ^5.0",
+                "matthiasnoback/symfony-config-test": "^4.3 || ^5.0 || ^6.0",
                 "matthiasnoback/symfony-dependency-injection-test": "^4.3 || ^5.0 || ^6.0",
                 "microsoft/azure-storage-blob": "^1.2",
                 "monolog/monolog": "^1.26.1 || ^2.3 || ^3.0",
@@ -6018,7 +6018,7 @@
                 "phpstan/phpstan-phpunit": "^2.0",
                 "phpstan/phpstan-symfony": "^2.0",
                 "phpstan/phpstan-webmozart-assert": "^2.0",
-                "phpunit/phpunit": "^10.5 || ^11.5",
+                "phpunit/phpunit": "^10.5 || ^11.5 || ^12.1",
                 "psr/event-dispatcher": "^1.0",
                 "rector/rector": "^2.0",
                 "rokka/imagine-vips": "0.20 - 0.40",
@@ -6091,7 +6091,7 @@
                 "issues": "https://github.com/sulu/skeleton/issues",
                 "source": "https://github.com/sulu/skeleton"
             },
-            "time": "2025-05-14T12:53:59+00:00"
+            "time": "2025-07-16T15:13:34+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -12250,16 +12250,16 @@
         },
         {
             "name": "php-cs-fixer/shim",
-            "version": "v3.82.2",
+            "version": "v3.84.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/shim.git",
-                "reference": "2dbabef3dae30752382cf4b9864780e78f71bc59"
+                "reference": "8208dabb176cbc03a76df5a908220dfb75c0af9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/2dbabef3dae30752382cf4b9864780e78f71bc59",
-                "reference": "2dbabef3dae30752382cf4b9864780e78f71bc59",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/8208dabb176cbc03a76df5a908220dfb75c0af9a",
+                "reference": "8208dabb176cbc03a76df5a908220dfb75c0af9a",
                 "shasum": ""
             },
             "require": {
@@ -12296,9 +12296,9 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/shim/issues",
-                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.82.2"
+                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.84.0"
             },
-            "time": "2025-07-08T21:13:44+00:00"
+            "time": "2025-07-15T18:22:22+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -12650,16 +12650,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.27",
+            "version": "1.12.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "3a6e423c076ab39dfedc307e2ac627ef579db162"
+                "reference": "fcf8b71aeab4e1a1131d1783cef97b23a51b87a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3a6e423c076ab39dfedc307e2ac627ef579db162",
-                "reference": "3a6e423c076ab39dfedc307e2ac627ef579db162",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/fcf8b71aeab4e1a1131d1783cef97b23a51b87a9",
+                "reference": "fcf8b71aeab4e1a1131d1783cef97b23a51b87a9",
                 "shasum": ""
             },
             "require": {
@@ -12704,7 +12704,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-21T20:51:45+00:00"
+            "time": "2025-07-17T17:15:39+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
